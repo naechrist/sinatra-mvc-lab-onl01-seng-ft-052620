@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def piglatinize(word)
-    return word if %w[and an in].include?(word) #one syllable exceptions
+    return word if %w[and an in].include?(word) 
     letters = word.split("")
     letters.keep_if {|letter| letter != "."}
       if letters.size > 1
